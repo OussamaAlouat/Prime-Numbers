@@ -1,4 +1,9 @@
 function isPrimeNumber(number) {
+  if (number  === 1 || (number!== 2 && number%2 === 0)) {
+    console.log(`The number ${number} is not prime`);
+    return false;
+  }
+
   let dividers = 0;
   const arrayOfDividers = [];
   let index = 1;
@@ -10,11 +15,13 @@ function isPrimeNumber(number) {
 
     index++;
   }
-  console.log(arrayOfDividers);
 
   if (dividers > 2) {
-    console.log('Is not prime number'); 
+    console.log(`The number ${number} is not prime`);
+    return false;
   }
+
+  console.log(`The number ${number} is prime, its dividers are: ${arrayOfDividers}`)
 }
 
-isPrimeNumber(100);
+isPrimeNumber(3);
