@@ -1,12 +1,9 @@
 function getDividers(number) {
   const arrayOfDividers = [];
-  let index = 1;
-  while (index <= number) {
+  for (let index = 1; index <= number; index++) {
     if (number % index === 0) {
       arrayOfDividers.push(index);
     }
-
-    index++;
   }
 
   return arrayOfDividers;
