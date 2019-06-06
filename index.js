@@ -24,6 +24,12 @@ function isPrimeNumber(number) {
   console.log(`The number ${number} is prime, its dividers are: ${dividers}`)
 }
 
+
+/*
+ * Test of functions
+ * This is not very correct, the most correct option is use testing library
+ */
+
 const numbers = [2, 3, 5, 7, 11, 13, 20, 25, 33, 77, 99, 101, 999, 1029, 9999, 999999999];
 
 for(const number of numbers) {
