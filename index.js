@@ -1,3 +1,7 @@
+/*
+ * Version 0.1.0
+ */
+
 function getDividers(number) {
   const arrayOfDividers = [];
   for (let index = 1; index <= number; index++) {
